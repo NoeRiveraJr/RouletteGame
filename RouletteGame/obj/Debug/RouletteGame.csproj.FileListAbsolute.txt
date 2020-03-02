@@ -1,0 +1,6 @@
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\bin\Debug\RouletteGame.exe.config
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\bin\Debug\RouletteGame.exe
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\bin\Debug\RouletteGame.pdb
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\obj\Debug\RouletteGame.csprojAssemblyReference.cache
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\obj\Debug\RouletteGame.exe
+C:\Users\imodc\OneDrive\Desktop\Projects\C#\RouletteGame\RouletteGame\obj\Debug\RouletteGame.pdb
