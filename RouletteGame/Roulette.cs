@@ -51,6 +51,12 @@ namespace RouletteGame
                         Console.WriteLine($"3. The winning color bet is {rb.colorBet(rouletteColors, spotIndex)}.");
                         Console.WriteLine($"4. {rb.lowHighBet(rouletteNumbers, spotIndex)}");
                         Console.WriteLine($"5. {rb.dozenBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine($"6. {rb.columnBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine($"7. {rb.streetBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine($"8. {rb.doubleRowBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine($"9. {rb.splitBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine($"10. {rb.cornerBet(rouletteNumbers, spotIndex)}");
+                        Console.WriteLine("Please press any key to continue");
                         Console.ReadKey();
                         Console.Clear();
                         break;
