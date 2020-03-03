@@ -384,14 +384,8 @@ namespace RouletteGame
                         }
                         break;
                 }
-
             }
             return cBet;
         }
-
-
-
-
-
     }
 }
