@@ -8,11 +8,11 @@ namespace RouletteGame
 {
     class RouletteBets
     {
-        int[] col1 = { 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34 };
+        int[] col1 = { 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34 };       //initialized 3 arrays to represent the columns to check for the winning column bet
         int[] col2 = { 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35 };
         int[] col3 = { 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36 };
         int colCheck;
-        public string evenOddBet(string[] rouletteNumber, int spotIndex)
+        public string evenOddBet(string[] rouletteNumber, int spotIndex)        //this method will determine if even or odd is the winning bet
         {
             string oddOrEven;
             if (spotIndex == 0)
@@ -37,13 +37,13 @@ namespace RouletteGame
             return oddOrEven;
         }
 
-        public string colorBet(string[] rouletteColors, int spotIndex)
+        public string colorBet(string[] rouletteColors, int spotIndex)      //returns the color of a number using the rouletteColors array
         {
             string color = rouletteColors[spotIndex];
             return color;
         }
 
-        public string lowHighBet(string[] rouletteNumbers, int spotIndex)
+        public string lowHighBet(string[] rouletteNumbers, int spotIndex)       //checks whether the winning bet would be low or high(either 1-18/19-36)
         {
             string lowOrHigh;
             if (spotIndex == 0)
@@ -68,7 +68,7 @@ namespace RouletteGame
             return lowOrHigh;
         }
 
-        public string dozenBet(string[] rouletteNumbers, int spotIndex)
+        public string dozenBet(string[] rouletteNumbers, int spotIndex)     //determines what dozen the numbers falls in(1-12/13-24/25-36)
         {
             string dozenPlace;
             if (spotIndex == 0)
@@ -97,7 +97,7 @@ namespace RouletteGame
             return dozenPlace;
         }
 
-        public string columnBet(string[] rouletteNumbers, int spotIndex)
+        public string columnBet(string[] rouletteNumbers, int spotIndex)        //determines what column the number is located in using the arrays declared at the top of the class
         {
             string colBet = "";
             if (spotIndex == 0)
@@ -154,7 +154,7 @@ namespace RouletteGame
            return colBet;
         }
 
-        public string streetBet(string[] rouletteNumbers, int spotIndex)
+        public string streetBet(string[] rouletteNumbers, int spotIndex)        //determines what street the number is located in(Ex: the number 2 is in street 1/2/3)
         {
             string sBet = "";
             if (spotIndex == 0)
@@ -183,7 +183,7 @@ namespace RouletteGame
            return sBet;
         }
 
-        public string doubleRowBet(string[] rouletteNumbers, int spotIndex)
+        public string doubleRowBet(string[] rouletteNumbers, int spotIndex)     //determines which double rows the number is located in
         {
             string dBet = "";
             if (spotIndex == 0)
@@ -256,14 +256,9 @@ namespace RouletteGame
                 }
             }
             return dBet;
-
-
-
-
-
         }
 
-        public string splitBet(string[] rouletteNumbers, int spotIndex)
+        public string splitBet(string[] rouletteNumbers, int spotIndex)     //determines all the split bets that the number could have(Ex. number 1 has the splits 1/2 and 1/4)
         {
             string spBet = "";
             if (spotIndex == 0)
@@ -326,7 +321,7 @@ namespace RouletteGame
                 return spBet;
         }
 
-        public string cornerBet(string[] rouletteNumbers, int spotIndex)
+        public string cornerBet(string[] rouletteNumbers, int spotIndex)        //determines what corners the number falls in(Ex.2 falls in corners 1/2/4/5 and 2/3/5/6)
         {
             string cBet = "";
             if (spotIndex == 0)
